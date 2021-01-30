@@ -17,3 +17,7 @@
      Calltree is able to detect	recursive  function  calls  (e.g.
      functions	that  call themselves).	 Recursive function calls
      are marked	with an	ellipsis in the	output.
+     
+     
+find . -name "*.[c|h]" |xargs sed -i -e "s/fexecve/fexecve_calltree/"
+find . -name "*.[c|h]" |xargs sed -i -e "s/getline/getline_calltree/"
